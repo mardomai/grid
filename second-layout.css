@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Teise lehe konteiner */
+.second-layout {
+    display: grid;
+    grid-template-columns: minmax(100px, 300px);
+    grid-template-rows: auto auto  1fr auto;
+    background-color: lightblue;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+header,
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+aside {
+    grid-row: 2 / 4;
+}
+
+main {
+    grid-column: 2 / 3;
+}
+
+.container >* {
+    border: 2px solid red;
+}
+
+header, 
+footer,
+main,
+aside,
+nav {
+    padding: 1rem;
+    border: 2px solid red;
+}

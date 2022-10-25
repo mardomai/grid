@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    background-color: beige;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+.container >* {
+    border: 2px solid red;
+}
+
+header, 
+footer,
+main,
+aside,
+nav {
+    padding: 1rem;
+    border: 2px solid red;
+}
